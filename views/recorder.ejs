@@ -1,0 +1,24 @@
+<div id="Recorder"></div>
+
+<script language="javascript" type="text/javascript"> 
+function Recorder(end){
+	var Recorder = document.getElementById('Recorder');
+	var now = new Date();
+	var endTime = now.getTime() + end * 60 * 1000;
+	function init(){
+		var date = new Date();
+		if(date.getTime() < endTime){
+			var duration = endTime - date.getTime();
+			var hour = parseInt(duration/ 1000 / 3600 % 24);
+			var minute = parseInt(duration / 1000 % 3600 / 60);
+			var second = parseInt(duration / 1000 % 3600 % 60);
+			Recorder.innerHTML = (hour < 10 ? "0" + hour : hour) + ":" + (minute < 10 ? "0" + minute : minute)  + ":" + (second < 10 ? "0" + second : second);
+		}
+		else{
+			alert('Time is Up!');
+		}
+	}
+	setInterval(function(){init()},1000);
+}
+// Recorder(10);
+</script> 

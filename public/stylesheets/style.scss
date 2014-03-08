@@ -1,0 +1,36 @@
+h1{
+	font-size : 20px;
+
+}
+
+
+*,
+*:before,
+*:after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.container{
+	padding-left:2em;
+	.left,.right{
+		width: 639px;
+		min-height: 1000px;
+	}	
+	.left{
+		float: left;
+		// border-right: 1px solid #000;
+		// background:rgba(0,0,0,0.4);
+	}
+	.box{
+		min-height: 300px;
+		padding: 2em;
+	}
+	.right{
+		margin-left:639px;
+		// background: rgba(0,0,255,0.3);	
+	}
+}
+

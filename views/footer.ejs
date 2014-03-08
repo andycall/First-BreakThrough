@@ -1,0 +1,59 @@
+	
+</body>
+<script src="/javascripts/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript" src="/javascripts/md5.js"></script>
+<script type="text/javascript" src="/javascripts/courage.js"></script>
+</html>
+
+<script type="text/javascript">
+
+// document.getElementById('main').addEventListener('submit',function(e){
+// 	e.preventDefault();
+// 	var level = parseInt(this.dataset.level);
+// 	var that = this;
+// 	console.log("level",level);
+
+// 	switch(level){
+// 		case 1:
+// 		 break;
+// 		 case 2 : 
+// 		 break;
+// 		 case 3 :
+// 		 break;
+// 		 case 4 :
+// 		 break;
+// 		 case 5:
+// 		 break;	
+// 		 case 6:
+// 		 break;
+// 		 case 7:
+// 		 break;
+// 		 case 8:
+// 		 	level8Check(that);
+// 		 break;
+// 		 case 9:
+// 		 break;
+// 		 case 10:
+// 		 break;
+// 	}
+// 	formNecessary(that);
+// 	e.returnValue = true;
+// });
+
+// eval("f=function(){return true;};g=function(){return false;};(function(){if("+   + "){f=function f(){return false;};function g(){return true;}}})();alert(f());");
+function level8Check(that){
+	var result = that.test8.value;
+	console.log(eval('var f=function(){return true;};var g=function(){return false;};(function(){if('+ result + '){f=function f(){return false;};function g(){return true;}}})();f.call(this)'));
+}
+
+function formNecessary(that){
+	console.log('123');
+	var isSuccess = that.isSuccess;
+	var level = that.level;
+	var user = that.user;
+	isSuccess.value = hex_md5(level.value + user.value);
+}
+
+
+</script>

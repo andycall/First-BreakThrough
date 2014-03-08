@@ -1,0 +1,19 @@
+<% include header %>
+
+<main id="container" class="container">
+	<form method="post" id="main" data-level="1">
+			<h1><%= title %></h1>
+			<h2><%= user %></h2>
+			<p>现实往往掌握在细心人的手里。。</p>
+		<section class="left-section box">
+		</section>
+		<input type="hidden" name="level" name="level" value="1">
+		<input type="hidden" name="isSuccess" value="">
+		<input type="hidden" name="submit" value="点击即过关！">
+	</form>
+</main>
+<% include footer %>
+<% include recorder %>
+<script type="text/javascript">
+	Recorder(10);
+</script>

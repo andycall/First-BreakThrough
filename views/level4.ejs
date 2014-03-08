@@ -1,0 +1,45 @@
+<% include header %>
+<% include recorder %>
+<main id="container" class="container">
+	<form method="post" id="main" data-level="4">
+		<h1><%= title %></h1>
+		<h3><%= user %></h3>
+<pre><code>
+
+&lt;div id="demo"&gt;
+
+    &lt;p&gt;恩，注意看我所在的位置。&lt;/p&gt;
+
+&lt;/div&gt;
+</code></pre>
+
+<pre><code>
+#demo{
+
+    width: 1000px;
+
+    height: 600px;
+
+}
+
+#demo p{
+    margin: 10% 5%;
+
+}
+</code></pre>
+
+
+<p>margin 的 top, right, bottom, left 计算值最终是多少</p>
+		<input type="text" name="test4" >
+		<input type="hidden" name="level" name="level" value="4">
+		<input type="hidden" name="isSuccess" value="">
+		<input type="submit" name="submit">
+	</form>
+</main>
+
+
+
+<% include footer %>
+<script type="text/javascript">
+	Recorder(10);
+</script>

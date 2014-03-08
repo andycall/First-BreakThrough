@@ -1,0 +1,27 @@
+<% include header %>
+
+
+<main id="container" class="container">
+	<form method="post" id="main" data-level="10">
+		<h1><%= title %></h1>
+		<h3><%= user %></h3>
+		<div id="answer" style="width:900px; word-break:break-word;">
+data:image/png;base64,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
+		</div>
+	
+
+
+			<input type="text" name="test10">
+			<input type="hidden" name="level" value="10">
+			<input type="hidden" name="isSuccess" value="">
+			<input type="submit">
+	</form>
+	<!-- answer:请吃饭就找dongtiangche@gmail.com -->
+
+</main>
+
+<% include footer %>
+<script type="text/javascript">
+recorder(20);
+</script>
+<% include recorder %>

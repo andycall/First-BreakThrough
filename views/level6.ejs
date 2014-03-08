@@ -1,0 +1,26 @@
+<% include header %>
+<% include recorder %>
+<main id="container" class="container">
+	<form action="/level6" method="post" id="main" data-level="6">
+			<h1><%= title %></h1>
+		<section class="left-section box">
+			<h1>函数表达式与函数声明</h1>
+			<section>
+					<pre><code>
+specity("Andycall"); // output: A n d y c a l l		
+					</code></pre>
+				<p>试写个函数实现上面的输出</p>
+				<textarea name="test6" id="test1" cols="50" rows="20"></textarea>
+			</section>
+		</section>
+			<input type="hidden" name="level" value="6">
+			<input type="hidden" name="isSuccess" value="">
+		<input type="submit">
+	</form>
+</main>
+
+<% include footer %>
+<script type="text/javascript">
+Recorder(10);	
+
+</script>

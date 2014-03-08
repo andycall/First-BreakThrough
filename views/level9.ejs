@@ -1,0 +1,37 @@
+<% include header %>
+<% include recorder %>
+<main id="container" class="container">
+	<form method="post" id="main" data-level="9">
+		<article class="left">
+			<h1><%= title %></h1>
+			<h3><%= user %></h3>
+			<section class="right-section box">
+				<h1>当闭包遇见THIS...</h1>
+				<pre><code>
+foo = function(){
+	this.myName = "Foo function."; 
+} 
+foo.prototype.sayHello = function(){
+	alert(this.myName); 
+}
+foo.prototype.bar = function(){ 
+	setTimeout(this.sayHello, 1000); 
+} 
+var f = new foo;
+f.bar();
+				</code></pre>
+	<p>如何修改程序让其输出正确的myName的值</p>
+			</section>
+			<textarea name="test9" id="test9" cols="30" rows="10"></textarea>
+			<input type="hidden" name="level" value="9">
+			<input type="hidden" name="isSuccess" value="">
+			<input type="submit">
+	</form>
+
+</main>
+<% include footer %>
+<script type="text/javascript">
+Recorder(15);
+
+
+</script>

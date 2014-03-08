@@ -1,0 +1,33 @@
+<% include header %>
+<% include recorder %>
+<main id="container" class="container">
+	<form method="post" id="main" data-level="8">
+		<article class="left">
+			<h1><%= title %></h1>
+			<section class="right-section box">
+				<h1>闭包</h1>
+				<pre><code>
+f = function() {return true;};   
+g = function() {return false;};   
+(function() {   
+   if (/* 请在这里填一段代码让程序成立 */) {   
+      f = function f() {return false;};   
+      function g() {return true;}
+   }
+})();   
+alert(f()); // false
+				</code></pre>
+	<input type="text" name="test8" id="test8" >
+			</section>
+			<input type="hidden" name="level" value="8">
+			<input type="hidden" name="isSuccess" value="">
+			<input type="submit">
+	</form>
+
+
+</main>
+
+<% include footer %>
+<script type="text/javascript">
+	Recorder(10);
+</script>

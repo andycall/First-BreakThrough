@@ -1,0 +1,28 @@
+<% include header %>
+<% include recorder %>
+<main id="container" class="container">
+	<form action="/level7" method="post" id="main" data-level="7">
+			<h1><%= title %></h1>
+		<section class="left-section box">
+			<h1>对象与函数</h1>
+			<section>
+				<pre><code>
+function Person(){} 
+var loser = Person();
+var wealthy = new Person();
+				</code></pre>
+				<p>简述一下loser与wealthy的区别</p>
+				<textarea name="test2" id="test2" cols="50" rows="20"></textarea>
+			</section>
+		</section>
+		<input type="hidden" name="level" value="7">
+			<input type="hidden" name="isSuccess" value="">
+			<input type="submit">
+	</form>
+</main>
+
+
+<% include footer %>
+<script type="text/javascript">
+	Recorder(10);
+</script>

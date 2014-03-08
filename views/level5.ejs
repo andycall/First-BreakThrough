@@ -1,0 +1,32 @@
+<% include header %>
+<% include recorder %>
+	<form method="post" id="main" data-level="5">
+		<article class="left">
+			<h1><%= title %></h1>
+			<h3><%= user %></h3>
+		<pre><code>
+var obj1 = {name: "abc"};
+var obj2 = {type : "human"};
+
+var obj3 = {};
+extend(obj3,obj1);
+extend(obj3,obj2);
+console.log(obj3); //{name : "abc",type:"human"}
+		</code></pre>
+
+	<p>实现上面的extend函数</p>
+	<textarea name="test5" id="test5" cols="30" rows="10"></textarea>
+	<input type="text" name="test5" id="test5" >
+			</section>
+			<input type="hidden" name="level" value="5">
+			<input type="hidden" name="isSuccess" value="">
+			<input type="submit">
+	</form>
+
+
+
+<% include footer %>
+<script type="text/javascript">
+	Recorder(10);
+
+</script>
