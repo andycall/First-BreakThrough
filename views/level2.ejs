@@ -2,44 +2,19 @@
 <% include recorder %>
 <link rel="stylesheet" href="/stylesheets/level1.css">
 <main id="container" class="container">
-	<form method="post" id="main" data-level="2">
+		<form method="post" id="main" data-level="2">
 			<h1><%= title %></h1>
-		<section class="left-section box">
-			<h1>DIV的激情碰撞</h1>
-			<section>
-			<img src="/images/level2.png" alt="level2">
-			<p>请使用3种方法实现这个效果</p>
-			</section>
-			<p>方法一:</p>
-			<section>
-				<textarea name="method1" id="method0" cols="30" rows="10"></textarea>
-				<div class="box_container">
-					<div class="box1">Box1</div>
-					<div class="box2">Box2</div>
-				</div>
-			</section>
-			<p>方法二：</p>
-			<section>
-				<textarea name="method2" id="method1" cols="30" rows="10"></textarea>
-				<div class="box_container">
-					<div class="box1">Box1</div>
-					<div class="box2">Box2</div>
-				</div>
-
-			</section>
-			<p>方法三：</p>
-			<section>
-				<textarea name="method3" id="method2" cols="30" rows="10"></textarea>
-				<div class="box_container">
-					<div class="box1">Box1</div>
-					<div class="box2">Box2</div>
-				</div>
-			</section>
-		</section>
-		<input type="hidden" name="level" value="2">
-		<input type="hidden" name="isSuccess" value="">
-		<input type="submit">
-	</form>
+			<h3><%= user %></h3>
+	<pre><code>
+		["1", "2", "3"].map(parseInt) 答案是多少,为什么?
+	</code></pre>
+			<input type="text" name="test2" >
+			<input type="text" name="test2_reason" id="test2_reason">
+			<input type="hidden" name="level" name="level" value="2">
+			<input type="hidden" name="isSuccess" value="">
+			<input type="submit" name="submit">
+		</form>
+	
 </main>
 
 <script type="text/javascript" src="javascripts/level2.js"></script>
